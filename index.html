@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -9,12 +10,23 @@
             max-width: 650px;
             background-color: #444;
         }
+
+        #videoPlayer {
+            width: 100vw;
+  height: 100vh;
+  object-fit: cover;
+  position: fixed;
+  top: 0;
+  left: 0;
+        }
     </style>
     <title>Video Streaming</title>
 </head>
+
 <body>
     <video id="videoPlayer" width="650" controls muted="muted" autoplay>
         <source src="/video" type="video/mp4" />
     </video>
 </body>
+
 </html>
